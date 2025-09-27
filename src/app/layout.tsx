@@ -58,6 +58,8 @@ export const metadata: Metadata = {
       "Únete a la comunidad de desarrolladores Python de habla hispana. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
     images: ["https://pythonhispano.com/og-image.png"],
   },
+  keywords:
+    "Python, Python español, comunidad Python, aprender Python, tutoriales Python, recursos Python, programación en español, desarrolladores Python",
 };
 
 const structuredData = {
