@@ -36,6 +36,19 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Python Hispano",
+  url: "https://pythonhispano.com",
+  logo: "https://pythonhispano.com/logo.png",
+  sameAs: [
+    "https://github.com/Python-Hispano",
+    // "https://twitter.com/PythonHispano",
+    // "https://linkedin.com/company/python-hispano"
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -47,9 +60,16 @@ export default function RootLayout({
       className={`${inter.variable} ${firaCode.variable}`}
       suppressHydrationWarning
     >
-      <body className="antialiased">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
+
+      <body className="flex flex-col antialiased">
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <WavyBackground className="h-full w-full">
+          <WavyBackground containerClassName="flex-grow">
             <Header />
             <main className="flex-grow">{children}</main>
             <Footer />
