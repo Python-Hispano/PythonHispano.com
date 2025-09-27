@@ -1,0 +1,8 @@
+- [x] Make theme switch icon hide on navbar mobile view
+- [x] Create themes for light and dark mode
+- [x] Add GitHub, Discord and Linkedin icons to the right
+- [x] Add logo to the left
+- [x] Change font
+- [x] Use icons from react icons
+- [x] Favicon
+- [ ] SEO
