@@ -1,4 +1,3 @@
-// src/components/ui/WavyBackground.tsx
 "use client";
 
 import { useTheme } from "next-themes";
@@ -6,24 +5,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
 
 import { cn } from "@/lib/utils";
-
-// src/components/ui/WavyBackground.tsx
-
-// src/components/ui/WavyBackground.tsx
-
-// src/components/ui/WavyBackground.tsx
-
-// src/components/ui/WavyBackground.tsx
-
-// src/components/ui/WavyBackground.tsx
-
-// src/components/ui/WavyBackground.tsx
-
-// src/components/ui/WavyBackground.tsx
-
-// src/components/ui/WavyBackground.tsx
-
-// src/components/ui/WavyBackground.tsx
 
 export interface WavyBackgroundProps {
   children?: React.ReactNode;

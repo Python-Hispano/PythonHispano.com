@@ -34,6 +34,30 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Python Hispano | La Comunidad de Python en Español",
+    description:
+      "Únete a la comunidad de desarrolladores Python de habla hispana. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
+    url: "https://pythonhispano.com",
+    siteName: "Python Hispano",
+    images: [
+      {
+        url: "https://pythonhispano.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Logo de Python Hispano y texto de bienvenida a la comunidad",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Python Hispano | La Comunidad de Python en Español",
+    description:
+      "Únete a la comunidad de desarrolladores Python de habla hispana. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
+    images: ["https://pythonhispano.com/og-image.png"],
+  },
 };
 
 const structuredData = {
