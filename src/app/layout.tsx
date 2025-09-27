@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     images: ["https://pythonhispano.com/og-image.png"],
   },
   keywords:
-    "Python, Python español, comunidad Python, aprender Python, tutoriales Python, recursos Python, programación en español, desarrolladores Python",
+    "Python, Python español, comunidad Python, aprender Python, tutoriales Python, recursos Python, programación en español, desarrolladores Python, Python Hispano",
 };
 
 const structuredData = {
