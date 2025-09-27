@@ -76,7 +76,7 @@ export default function Header() {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground z-50 rounded-md p-1 sm:p-2 lg:hidden"
+              className="text-foreground z-50 cursor-pointer rounded-md p-1 sm:p-2 lg:hidden"
               aria-label="Abrir menú"
             >
               {isMenuOpen ? (

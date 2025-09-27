@@ -23,7 +23,7 @@ export const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-full p-1 text-slate-400 transition-all hover:bg-slate-800 hover:text-white"
+      className="cursor-pointer rounded-full p-1 text-slate-400 transition-all hover:bg-slate-800 hover:text-white"
       aria-label="Cambiar tema"
     >
       {theme === "dark" ? <HiSun className="h-6 w-6" /> : <HiMoon className="h-6 w-6" />}
