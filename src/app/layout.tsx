@@ -21,7 +21,7 @@ const firaCode = Fira_Code({
 export const metadata: Metadata = {
   title: "Python Hispano | La Comunidad de Python en Español",
   description:
-    "Únete a la comunidad de desarrolladores Python de habla hispana. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
+    "Únete a la comunidad de desarrolladores Python en español. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
   alternates: {
     canonical: "https://pythonhispano.com",
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Python Hispano | La Comunidad de Python en Español",
     description:
-      "Únete a la comunidad de desarrolladores Python de habla hispana. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
+      "Únete a la comunidad de desarrolladores Python en español. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
     url: "https://pythonhispano.com",
     siteName: "Python Hispano",
     images: [
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Python Hispano | La Comunidad de Python en Español",
     description:
-      "Únete a la comunidad de desarrolladores Python de habla hispana. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
+      "Únete a la comunidad de desarrolladores Python en español. Encuentra tutoriales, recursos, proyectos y ayuda para aprender y programar en español.",
     images: ["https://pythonhispano.com/og-image.png"],
   },
   keywords:

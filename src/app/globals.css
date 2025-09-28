@@ -10,6 +10,8 @@
   --primary: 221.2 83.2% 53.3%;
   --primary-foreground: 0 0% 100%;
   --accent: 45.4 93.4% 47.5%;
+  --primary-python-blue: #3b82f6;
+  --primary-python-yellow: #fbbf24;
 }
 
 .dark {
@@ -20,6 +22,8 @@
   --primary: 217.2 91.2% 59.8%;
   --primary-foreground: 222.2 47.4% 11.2%;
   --accent: 45.4 93.4% 47.5%;
+  --primary-python-blue: #3b82f6;
+  --primary-python-yellow: #fbbf24;
 }
 
 @layer components {
@@ -49,6 +53,8 @@
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-accent: hsl(var(--accent));
+  --color-primary-python-blue: var(--primary-python-blue);
+  --color-primary-python-yellow: var(--primary-python-yellow);
 
   --font-sans: var(--font-inter);
   --font-mono: var(--font-fira-code);

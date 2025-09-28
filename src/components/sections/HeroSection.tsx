@@ -52,13 +52,23 @@ greetings("Python Hispano")
               <span>
                 <ColorfulText text="Python Hispano" />
               </span>
+              <span className="mt-2 text-2xl text-slate-600 sm:text-3xl md:text-4xl dark:text-slate-300">
+                <i>La Comunidad de Python en Español</i>
+              </span>
             </h1>
 
             <p className="text-foreground/80 mt-4 max-w-[600px] md:text-xl">
-              La comunidad de código abierto para{" "}
-              <span className="font-bold">entusiastas de Python en español</span>.
-              Encuentra tutoriales, recursos y proyectos. Aprende, colabora y construye
-              con nosotros.
+              Somos la comunidad de código abierto para{" "}
+              <span className="font-bold">
+                desarrolladores y entusiastas de Python en español
+              </span>
+              . Encuentra <span className="font-bold">tutoriales de Python</span>,
+              recursos, y <span className="font-bold">proyectos en español</span> para
+              aprender, programar y crecer.
+              <br />
+              <span className="realistic-marker-highlight">
+                <b>¡Colabora y construye con nosotros! 🚀</b>
+              </span>
             </p>
 
             <pre className="font-fira-code bg-card border-border mt-6 w-full max-w-md overflow-x-auto rounded-lg border p-2 text-left text-sm">
