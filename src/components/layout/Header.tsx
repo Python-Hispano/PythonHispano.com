@@ -13,7 +13,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/projects", label: "Proyectos" },
-    { href: "/members", label: "Colaboradores" },
+    { href: "/collaborators", label: "Colaboradores" },
     { href: "/join", label: "Únete" },
   ];
 
