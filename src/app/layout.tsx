@@ -101,7 +101,7 @@ export default function RootLayout({
 
       <body className="flex flex-col antialiased">
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <WavyBackground containerClassName="flex-grow">
+          <WavyBackground className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-grow">{children}</main>
             <Footer />
