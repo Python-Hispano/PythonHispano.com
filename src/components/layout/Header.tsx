@@ -2,11 +2,36 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
 import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
+import { cn, normalizePath } from "@/lib/utils";
+
+const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+  const pathname = usePathname();
+  const normalizedPathname = normalizePath(pathname);
+  const normalizedHref = normalizePath(href);
+
+  const isActive = normalizedPathname === normalizedHref;
+
+  return (
+    <Link
+      href={href}
+      className={cn(
+        "text-foreground/60 hover:text-foreground relative transition-colors duration-300",
+        "after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full",
+        "after:origin-center after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:transition-transform after:duration-300",
+        "hover:after:scale-x-100",
+        isActive && "text-foreground after:scale-x-100"
+      )}
+    >
+      {children}
+    </Link>
+  );
+};
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,13 +71,9 @@ export default function Header() {
 
           <nav className="hidden items-center space-x-8 lg:absolute lg:left-1/2 lg:flex lg:-translate-x-1/2">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-foreground/60 hover:text-foreground transition-colors duration-300"
-              >
+              <NavLink key={link.href} href={link.href}>
                 {link.label}
-              </Link>
+              </NavLink>
             ))}
           </nav>
 
