@@ -1,5 +1,7 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
+import { FaRocket } from "react-icons/fa6";
 
 import { CollaboratorCard } from "@/components/ui/CollaboratorCard";
 import { collaboratorsData } from "@/data/collaborators";
@@ -51,6 +53,23 @@ export default function CollaboratorsPage() {
           {collaboratorsDataDisplay.map((collaborator) => (
             <CollaboratorCard key={collaborator.id} collaborator={collaborator} />
           ))}
+        </div>
+
+        <div className="border-border bg-card/20 mt-24 rounded-lg border p-8 text-center shadow-lg">
+          <h2 className="text-foreground text-3xl font-bold tracking-tighter">
+            ¿Quieres ser parte del equipo?
+          </h2>
+          <p className="text-foreground/70 mx-auto mt-4 max-w-xl">
+            Si te apasiona Python y quieres contribuir, siempre estamos buscando nuevos
+            talentos para hacer crecer la comunidad.
+          </p>
+          <Link
+            href="/join"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground mt-8 inline-flex h-12 items-center justify-center gap-2 rounded-md px-8 font-medium shadow transition-colors"
+          >
+            <FaRocket className="h-5 w-5" />
+            Conviértete en Colaborador
+          </Link>
         </div>
       </div>
     </section>
