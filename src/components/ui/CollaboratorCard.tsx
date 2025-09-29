@@ -41,7 +41,7 @@ const SocialIcon = ({ icon, url }: { icon: string; url: string }) => {
 
 export function CollaboratorCard({ collaborator }: CollaboratorCardProps) {
   return (
-    <div className="bg-card border-border relative flex flex-col items-center rounded-xl border p-6 text-center shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+    <div className="bg-card border-border relative flex max-w-sm min-w-xs flex-col items-center rounded-xl border p-6 text-center shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
       <div className="ring-primary-python-blue border-primary-python-yellow relative mb-4 h-24 w-24 rounded-full border-2 ring-4">
         {" "}
         <Image

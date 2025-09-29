@@ -47,7 +47,7 @@ export default function CollaboratorsPage() {
           los proyectos y ayudan a otros a crecer en su camino con Python.
         </p>
 
-        <div className="grid grid-cols-1 justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="flex flex-wrap justify-center gap-4">
           {collaboratorsDataDisplay.map((collaborator) => (
             <CollaboratorCard key={collaborator.id} collaborator={collaborator} />
           ))}
