@@ -29,7 +29,7 @@ greetings("Python Hispano")
   return (
     <section
       id="inicio"
-      className="flex min-h-[calc(100vh-5rem)] items-center justify-center overflow-hidden py-12"
+      className="flex flex-grow items-center justify-center overflow-hidden pt-20 pb-8 lg:pb-0"
     >
       <div className="container mt-0 px-4">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
@@ -46,7 +46,7 @@ greetings("Python Hispano")
           </div>
 
           {/* Right col, text, code and buttons  */}
-          <div className="animate-fade-in-up flex flex-col items-center text-center">
+          <div className="animate-fade-in-up flex flex-col items-center text-center lg:mt-16">
             <h1 className="flex flex-col text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               <span>Bienvenid@ a </span>
               <span>
